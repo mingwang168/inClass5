@@ -54,7 +54,7 @@ namespace inClass5
             copyStructAccount.SHowDetails("Copy struct Account");
             classAccount.SHowDetails("Original class Account");
             copyClassAccount.SHowDetails("Copy class Account");
-            Console.WriteLine();
+            Console.WriteLine("---------------------------------------------");
             structAccount.AddMonthlyInsterest();
             classAccount.AddMonthlyInsterest();
             structAccount.SHowDetails("Original struct Account");
