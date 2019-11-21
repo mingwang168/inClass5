@@ -47,12 +47,20 @@ namespace inClass5
             const float BALANCE = 593473.039f;
             BankAccountStruct structAccount = new BankAccountStruct(NAME, BALANCE);
             BankAccountClass classAccount = new BankAccountClass(NAME, BALANCE);
+
+            BankAccountStruct copyStructAccount = structAccount;
+            BankAccountClass copyClassAccount = classAccount;
             structAccount.SHowDetails("Original struct Account");
+            copyStructAccount.SHowDetails("Copy struct Account");
             classAccount.SHowDetails("Original class Account");
+            copyClassAccount.SHowDetails("Copy class Account");
+            Console.WriteLine();
             structAccount.AddMonthlyInsterest();
             classAccount.AddMonthlyInsterest();
             structAccount.SHowDetails("Original struct Account");
+            copyStructAccount.SHowDetails("Copy struct Account");
             classAccount.SHowDetails("Original class Account");
+            copyClassAccount.SHowDetails("Copy class Account");
             Console.ReadLine();
         }
     }
